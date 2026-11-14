@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "VideoGrabber",
+  "version": "1.0",
+  "description": "Находит m3u8 на странице и отправляет в локальный VideoGrabber",
+  "permissions": ["webRequest", "tabs", "storage", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "VideoGrabber" }
+}
