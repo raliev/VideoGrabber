@@ -8,3 +8,12 @@
 site_rules are keyed by the page host (subdomains match):
     "example.com": {"referer": "...", "user_agent": "...", "headers": {"Origin": "..."}}
 Restart the app after editing config.
+
+## Install on a new Mac
+
+    brew install yt-dlp ffmpeg python python-tk
+    git clone https://github.com/raliev/VideoGrabber.git ~/VideoGrabber
+    ~/VideoGrabber/install.sh        # builds /Applications/VideoGrabber.app
+
+Then in Chrome: `chrome://extensions` → Developer mode → Load unpacked → `~/VideoGrabber/extension`.
+Use `PYTHON=/path/to/python3 ./install.sh` to pick a specific interpreter (needs tkinter).
